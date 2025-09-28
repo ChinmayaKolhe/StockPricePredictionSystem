@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction API</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .endpoint { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        code { background: #eee; padding: 2px 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction API</h1>
+        <p>This API provides stock data and price predictions.</p>
+        
+        <div class="endpoint">
+            <h3>Get Stock Data</h3>
+            <p><code>GET /api/stock/&lt;symbol&gt;</code></p>
+            <p>Example: <code>/api/stock/AAPL</code></p>
+        </div>
+        
+        <div class="endpoint">
+            <h3>Predict Stock Prices</h3>
+            <p><code>POST /api/predict</code></p>
+            <p>Body: <code>{"symbol": "AAPL", "days_ahead": 7}</code></p>
+        </div>
+        
+        <div class="endpoint">
+            <h3>Suggest Symbols</h3>
+            <p><code>GET /api/suggest/&lt;partial&gt;</code></p>
+            <p>Example: <code>/api/suggest/app</code></p>
+        </div>
+        
+        <div class="endpoint">
+            <h3>Market Status</h3>
+            <p><code>GET /api/market-status</code></p>
+        </div>
+    </div>
+</body>
+</html>
+            
